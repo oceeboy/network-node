@@ -17,7 +17,7 @@ function HomePage() {
     <section className={"h-full pt-10 "}>
       <div className="container bg-[url('/icons/background.svg')] bg-contain bg-no-repeat bg-center mx-auto">
         <div className="min-h-screen   flex container items-center justify-center">
-          <div className="grid grid-cols-1 px-10 py-10 items-center justify-center  sm:grid-cols-2  sm:gap-[50px] gap-[50px] max-w-[800px] ">
+          <div className="grid grid-cols-1  py-10 items-center justify-center  sm:grid-cols-2  sm:gap-[50px] gap-[50px] max-w-[800px] ">
             {Cards.map((card, index) => (
               <ItemCard
                 key={index}
