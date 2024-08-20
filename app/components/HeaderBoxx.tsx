@@ -17,11 +17,7 @@ const HeaderBoxx = () => {
             </Link>
           </div>
         </div>
-        <div className="flex items-center space-x-5">
-          <div className="spiner">
-            <Spinner />
-          </div>
-        </div>
+        <div className="flex items-center space-x-5"></div>
       </div>
     </nav>
   );
