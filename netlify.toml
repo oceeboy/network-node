@@ -1,0 +1,18 @@
+[build]
+  command = "npm run build"
+  publish = "out"  
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[context.production]
+  command = "npm run build"
+  publish = "out"
+
+[context.deploy-preview]
+  command = "npm run build"
+  publish = "out"
+
+[context.branch-deploy]
+  command = "npm run build"
+  publish = "out"
