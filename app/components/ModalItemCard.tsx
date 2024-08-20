@@ -10,10 +10,16 @@ const ModalItemCard = ({ image, title, nextContent }: MobileItemCardProps) => {
   return (
     <button
       onClick={nextContent}
-      className="flex w-full mb-5 items-center p-3 rounded-lg hover:bg-gray-800 cursor-pointer"
+      className="flex w-full mb-5 items-center p-3 rounded-lg bg-gray-800 cursor-pointer"
     >
-      <Image src={image} alt="Trust Wallet" width={24} height={24} />
-      <span className="ml-4 text-white">{title}</span>
+      <Image
+        src={image}
+        alt="Trust Wallet"
+        width={30}
+        height={30}
+        className=" rounded-xl"
+      />
+      <span className="ml-4 font-semibold text-white">{title}</span>
     </button>
   );
 };
