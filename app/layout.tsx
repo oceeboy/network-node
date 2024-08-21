@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "https://embed.tawk.to/66c1b6a5146b7af4a43bb231/1i5ib2ucm";
+    script.src = "https://embed.tawk.to/66c60522ea492f34bc0898d4/1i5qo83rm";
     script.async = true;
     script.charset = "UTF-8";
     script.setAttribute("crossorigin", "*");
