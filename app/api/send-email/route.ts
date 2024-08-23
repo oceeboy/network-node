@@ -13,12 +13,14 @@ export async function POST(request: Request) {
     })
     .join("");
 
-  // Nodemailer setup
   const transporter = nodemailer.createTransport({
     service: "gmail",
+
+    secure: process.env.NODE_ENV !== "production",
+
     auth: {
-      user: "williamjunanji86@gmail.com",
-      pass: "fjozvfvvtlxwftzd",
+      user: process.env.MAIL_USER,
+      pass: process.env.MAIL_PASSWORD,
     },
   });
 
